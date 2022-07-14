@@ -128,6 +128,7 @@ body {
     line-height: 1.17;
 }
 
+/* benefits style */
 .benefits-item .title {
 
     font-style: normal;
@@ -145,6 +146,7 @@ body {
     color: var(--secondary-text-color);
 }
 
+/* team style */
 .team-item .title {
 
     font-weight: 500;
@@ -162,6 +164,8 @@ body {
 }
 
 /* portfolio main style */
+
+/* filter style */
 
 .filter-item .button {
     font-family: inherit;
@@ -181,6 +185,8 @@ body {
     color: var(--white-color);
     background-color: var(--accent-color);
 }
+
+/* progects style */
 
 .progects-item .title {
 
