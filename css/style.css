@@ -4,7 +4,13 @@
 --accent-color: #2196F3;
 --primary-bg-color: #F5F4FA;
 --secondary-bg-color: #2F303A;
+--white-color: #ffffff;
 }
+
+.dot {
+    list-style-type: none;
+}
+
 
 body {
 
@@ -74,6 +80,125 @@ body {
 
 /* main index.html style */
 
+/* hero style */
+
+.hero {
+
+    background-color: var(--secondary-bg-color);
+}
+
+.hero-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--white-color);
+}
+
+.hero-button {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: var(--white-color);
+    background-color: var(--accent-color);
+
+    cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+
+    background-color:  #188CE8;
+
+}
+
+.secondary-title {
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+}
+
+.benefits-item .title {
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.benefits-item .text {
+
+    font-size: 14px;
+    line-height: 1.71;
+    
+    color: var(--secondary-text-color);
+}
+
+.team-item .title {
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+
+}
+
+.team-item .text {
+
+    font-size: 16px;
+    line-height: 1.19;
+
+    color: var(--secondary-text-color);
+}
+
+/* portfolio main style */
+
+.filter-item .button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: inherit;
+
+    color: inherit;
+    background-color: #F5F4FA;
+
+    cursor: pointer;
+}
+
+.filter-item .button:hover,
+.filter-item .button:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+.progects-item .title {
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+}
+
+.progects-item .text {
+
+    font-size: 16px;
+    line-height: 1.88;
+
+    color: var(--secondary-text-color);
+}
+
 /* footer style */
 
 .footer {
@@ -86,7 +211,7 @@ body {
     font-size: 26px;
     line-height: 1.19;
 
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 .flogo-style {
@@ -100,7 +225,7 @@ body {
     font-size: 14px;
     line-height: 1.71;
 
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 .fcontacts .link {
