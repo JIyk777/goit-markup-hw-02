@@ -15,6 +15,7 @@
 body {
 
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
     letter-spacing: 0.03em;
 
     color:var(--primary-text-color) ;
@@ -27,6 +28,27 @@ body {
 /* основной цвет заливки #F5F4FA */
 /* вторичній цвет заливки #2F303A */
 
+/* link transform */
+
+.link {
+    text-decoration: none;
+}
+
+/* ховаєм заголовки */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    
+}
 
 /* header style */
     
@@ -47,34 +69,36 @@ body {
     
 /* nav style */
 
-.nav .link {
+.nav-link {
 
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
     color: inherit;
 }
-.nav .link:hover,
-.nav .link:focus {
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent-color);
+}
+
+.nav-list .nav-link.current {
     color: var(--accent-color);
 }
     
 /* contacts style */
 
-.contacts .link {
+.contacts-link {
 
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     
     color: #757575;
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
     color: var(--accent-color);
 }
 
@@ -103,7 +127,6 @@ body {
     font-family: inherit;
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.06em;
@@ -121,7 +144,7 @@ body {
 
 }
 
-.secondary-title {
+.section-title {
 
     font-weight: 700;
     font-size: 36px;
@@ -129,25 +152,22 @@ body {
 }
 
 /* benefits style */
-.benefits-item .title {
+.benefits-title {
 
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
 
-.benefits-item .text {
+.benefits-text {
 
-    font-size: 14px;
     line-height: 1.71;
     
     color: var(--secondary-text-color);
 }
 
 /* team style */
-.team-item .title {
+.team-title {
 
     font-weight: 500;
     font-size: 16px;
@@ -155,7 +175,7 @@ body {
 
 }
 
-.team-item .text {
+.team-text {
 
     font-size: 16px;
     line-height: 1.19;
@@ -167,7 +187,7 @@ body {
 
 /* filter style */
 
-.filter-item .button {
+.filter-list .button {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -180,24 +200,23 @@ body {
     cursor: pointer;
 }
 
-.filter-item .button:hover,
-.filter-item .button:focus {
+.filter-list .button:hover,
+.filter-list .button:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
 }
 
 /* progects style */
 
-.progects-item .title {
+.progects-title {
 
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 
 }
 
-.progects-item .text {
+.progects-text {
 
     font-size: 16px;
     line-height: 1.88;
@@ -228,23 +247,21 @@ body {
     font-family: inherit;
     font-style:normal;
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
 
     color: var(--white-color);
 }
 
-.fcontacts .link {
+.fcontacts-link {
         font-weight: 400;
-        font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
     
         color: rgba(255, 255, 255, 0.6);
 }
 
-.fcontacts .link:hover,
-.fcontacts .link:focus {
+.fcontacts-link:hover,
+.fcontacts-link:focus {
     color: var(--accent-color);
 }
 
