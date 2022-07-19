@@ -31,7 +31,9 @@ body {
 /* link transform */
 
 .link {
+
     text-decoration: none;
+
 }
 
 /* ховаєм заголовки */
@@ -154,6 +156,7 @@ body {
 /* benefits style */
 .benefits-title {
 
+    font-size: 14px;
     font-style: normal;
     line-height: 1.14;
     text-transform: uppercase;
@@ -202,6 +205,12 @@ body {
 
 .filter-list .button:hover,
 .filter-list .button:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+.filter-list .button.current {
+
     color: var(--white-color);
     background-color: var(--accent-color);
 }
