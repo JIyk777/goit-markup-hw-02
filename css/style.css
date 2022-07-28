@@ -249,6 +249,7 @@ ul {
 
     padding: 10px 32px;
     border-radius: 4px;
+    border: 0;
     margin-top: 30px;
 
     font-family: inherit;
@@ -399,6 +400,8 @@ ul {
 .filter-list .button {
 
     border-radius: 4px;
+    border: 0;
+    padding: 6px 22px;
 
     font-family: inherit;
     font-weight: 500;
@@ -407,7 +410,7 @@ ul {
     letter-spacing: inherit;
 
     color: inherit;
-    background-color: #F5F4FA;
+    background: #F5F4FA;
 
     cursor: pointer;
 }
