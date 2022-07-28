@@ -5,105 +5,116 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <meta charset="utf-8" />
     <meta name="desciption" content="початок навчання goit">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/1.1.0/normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav class="nav">
-            <a href="./index.html" class="logo link"><span class="logo-style">Web</span>Studio</a>
-            <ul class="nav-list">
-                <li class="dot nav-item"><a href="./index.html" class="nav-link link">Студия</a></li>
-                <li class="dot nav-item"><a href="./portfolio.html" class="nav-link link current">Портфолио</a></li>
-                <li class="dot nav-item"><a href="" class="nav-link link">Контакты</a></li>
+    <header class="header">
+        <div class="container flex-container">
+            <nav class="nav">
+                <a href="./index.html" class="logo link "><span class="logo-style">Web</span>Studio</a>
+                <ul class="nav-list">
+                    <li class="dot nav-item"><a href="./index.html" class="nav-link link">Студия</a></li>
+                    <li class="dot nav-item"><a href="./portfolio.html" class="nav-link link current">Портфолио</a></li>
+                    <li class="dot nav-item"><a href="" class="nav-link link">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="contacts">
+                <li class="dot contacts-item"><a href="mailto:info@devstudio.com"
+                        class="contacts-link link">info@devstudio.com</a>
+                </li>
+                <li class="dot contacts-item"><a href="tel:+380961111111" class="contacts-link link">+38 096 111 11 11</a>
+                </li>
             </ul>
-        </nav>
-        <ul class="contacts">
-            <li class="dot contacts-item"><a href="mailto:info@devstudio.com"
-                    class="contacts-link link">info@devstudio.com</a></li>
-            <li class="dot contacts-item"><a href="tel:+380961111111" class="contacts-link link">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
     <main>
         <!-- Секция фильтр -->
-        <section class="filter">
-            <h1 class="section-title visually-hidden">Фильтр</h1>
-            <ul class="filter-list">
-                <li class="dot">
-                    <button type="button" class="button current">Все</button>
-                </li>
-                <li class="dot">
-                    <button type="button" class="button">Веб-сайты</button>
-                </li>
-                <li class="dot">
-                    <button type="button" class="button">Приложения</button>
-                </li>
-                <li class="dot">
-                    <button type="button" class="button">Дизайн</button>
-                </li>
-                <li class="dot">
-                    <button type="button" class="button">Маркетинг</button>
-                </li>
-            </ul>
-            <ul class="progects-list">
-                <li class="dot progects-item">
-                    <img src="./images/progect1.jpg" alt="" width="370" height="294">
-                    <h3 class="progects-title">Технокряк</h3>
-                    <p class="progects-text">Веб-сайт</p>
-                </li>
-                <li class="dot progects-item">
-                    <img src="./images/progect2.jpg" alt="" width="370" height="294">
-                    <h3 class="progects-title">Постер New Orlean vs Golden Star</h3>
-                    <p class="progects-text">Дизайн</p>
-                </li>
-                <li class="dot progects-item">
-                    <img src="./images/progect3.jpg" alt="" width="370" height="294">
-                    <h3 class="progects-title">Ресторан Seafood</h3>
-                    <p class="progects-text">Приложение</p>
-                </li>
-                <li class="dot progects-item">
-                    <img src="./images/progect4.jpg" alt="" width="370" height="294">
-                    <h3 class="progects-title">Проект Prime</h3>
-                    <p class="progects-text">Маркетинг</p>
-                </li>
-                <li class="dot progects-item">
-                    <img src="./images/progect5.jpg" alt="" width="370" height="294">
-                    <h3 class="progects-title">Проект Boxes</h3>
-                    <p class="progects-text">Приложение</p>
-                </li>
-                <li class="dot progects-item">
-                    <img src="./images/progect6.jpg" alt="" width="370" height="294">
-                    <h3 class="progects-title">Inspiration has no Borders</h3>
-                    <p class="progects-text">Веб-сайт</p>
-                </li>
-                <li class="dot progects-item">
-                    <img src="./images/progect7.jpg" alt="" width="370" height="294">
-                    <h3 class="progects-title">Издание Limited Edition</h3>
-                    <p class="progects-text">Дизайн</p>
-                </li>
-                <li class="dot progects-item">
-                    <img src="./images/progect8.jpg" alt="">
-                    <h3 class="progects-title">Проект LAB</h3>
-                    <p class="progects-text">Маркетинг</p>
-                </li>
-                <li class="dot progects-item">
-                    <img src="./images/progect9.jpg" alt="">
-                    <h3 class="progects-title">Growing Business</h3>
-                    <p class="progects-text">Приложение</p>
-                </li>
-            </ul>
+        <section class="filter section">
+            <div class="container">
+                <h1 class="section-title visually-hidden">Фильтр</h1>
+                <ul class="filter-list">
+                    <li class="dot filter-item">
+                        <button type="button" class="button current">Все</button>
+                    </li>
+                    <li class="dot filter-item">
+                        <button type="button" class="button">Веб-сайты</button>
+                    </li>
+                    <li class="dot filter-item">
+                        <button type="button" class="button">Приложения</button>
+                    </li>
+                    <li class="dot filter-item">
+                        <button type="button" class="button">Дизайн</button>
+                    </li>
+                    <li class="dot filter-item">
+                        <button type="button" class="button">Маркетинг</button>
+                    </li>
+                </ul>
+                <ul class="progects-list">
+                    <li class="dot progects-item">
+                        <img src="./images/progect1.jpg" alt="" width="370" height="294">
+                        <h3 class="progects-title">Технокряк</h3>
+                        <p class="progects-text">Веб-сайт</p>
+                    </li>
+                    <li class="dot progects-item">
+                        <img src="./images/progect2.jpg" alt="" width="370" height="294">
+                        <h3 class="progects-title">Постер New Orlean vs Golden Star</h3>
+                        <p class="progects-text">Дизайн</p>
+                    </li>
+                    <li class="dot progects-item">
+                        <img src="./images/progect3.jpg" alt="" width="370" height="294">
+                        <h3 class="progects-title">Ресторан Seafood</h3>
+                        <p class="progects-text">Приложение</p>
+                    </li>
+                    <li class="dot progects-item">
+                        <img src="./images/progect4.jpg" alt="" width="370" height="294">
+                        <h3 class="progects-title">Проект Prime</h3>
+                        <p class="progects-text">Маркетинг</p>
+                    </li>
+                    <li class="dot progects-item">
+                        <img src="./images/progect5.jpg" alt="" width="370" height="294">
+                        <h3 class="progects-title">Проект Boxes</h3>
+                        <p class="progects-text">Приложение</p>
+                    </li>
+                    <li class="dot progects-item">
+                        <img src="./images/progect6.jpg" alt="" width="370" height="294">
+                        <h3 class="progects-title">Inspiration has no Borders</h3>
+                        <p class="progects-text">Веб-сайт</p>
+                    </li>
+                    <li class="dot progects-item">
+                        <img src="./images/progect7.jpg" alt="" width="370" height="294">
+                        <h3 class="progects-title">Издание Limited Edition</h3>
+                        <p class="progects-text">Дизайн</p>
+                    </li>
+                    <li class="dot progects-item">
+                        <img src="./images/progect8.jpg" alt="">
+                        <h3 class="progects-title">Проект LAB</h3>
+                        <p class="progects-text">Маркетинг</p>
+                    </li>
+                    <li class="dot progects-item">
+                        <img src="./images/progect9.jpg" alt="">
+                        <h3 class="progects-title">Growing Business</h3>
+                        <p class="progects-text">Приложение</p>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer class="footer">
         <!--address-->
-        <a href="./index.html" class="flogo link"><span class="flogo-style">Web</span>Studio </a>
-        <address class="address">
-            г. Киев, пр-т Леси Украинки, 26
-        </address>
-        <ul class="fcontacts">
-            <li class="dot"><a href="mailto:info@devstudio.com" class="fcontacts-link link">info@devstudio.com</a></li>
-            <li class="dot"><a href="tel:+380961111111" class="fcontacts-link link">+38 096 111 11 11</a></li>
-        </ul>
+        <div class="container">
+            <a href="./index.html" class="flogo link"><span class="flogo-style">Web</span>Studio </a>
+            <address class="address">
+                г. Киев, пр-т Леси Украинки, 26
+            </address>
+            <ul class="fcontacts">
+                <li class="dot fcontacts-item"><a href="mailto:info@devstudio.com"
+                        class="fcontacts-link link">info@devstudio.com</a></li>
+                <li class="dot fcontacts-item"><a href="tel:+380961111111" class="fcontacts-link link">+38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 
